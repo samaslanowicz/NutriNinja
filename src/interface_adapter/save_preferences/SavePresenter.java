@@ -11,9 +11,14 @@ public class SavePresenter implements SaveOutputBoundary {
     }
     @Override
     public void prepareSuccessView(SaveOutputData response) {
-        // On success, switch to the logged in view.
+        // On success, present the user with the success message
 
         SaveState saveState = saveViewModel.getState();
         this.saveViewModel.setState(saveState);
+    }
+    public void prepareFailView(SaveOutputData response) {
+        // On fail, present the user with the fail message
+
+
     }
 }

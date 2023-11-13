@@ -1,11 +1,13 @@
 package interface_adapter.save_preferences;
+import java.util.ArrayList;
+import java.util.List;
 
 import entity.NutrientRange;
 
 public class SaveState {
     private NutrientRange nutrientRange = new NutrientRange(new Range(), new Range(), new Range(), new Range());
-    private String healthPreferences = "";
-    private String dishType = "";
+    private List<String> healthPreferences = new ArrayList<>();
+    private List<String> dishType = new ArrayList<>();
 
     public SaveState(SaveState copy) {
         nutrientRange = copy.nutrientRange;
@@ -20,11 +22,11 @@ public class SaveState {
         return nutrientRange;
     }
 
-    public String getHealthPreferences() {
+    public List<String> getHealthPreferences() {
         return healthPreferences;
     }
 
-    public String getDishType() {
+    public List<String> getDishType() {
         return dishType;
     }
 
@@ -32,11 +34,9 @@ public class SaveState {
         this.nutrientRange = nutrientRange;
     }
 
-    public void setHealthPreferences(String healthPreferences) {
-        this.healthPreferences = healthPreferences;
-    }
+    public void setHealthPreferences(List<String> healthPreferences) {this.healthPreferences = healthPreferences;}
 
-    public void setDishType(String dishType) {this.dishType = dishType;}
+    public void setDishType(List<String> dishType) {this.dishType = dishType;}
 
 
 }
