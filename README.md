@@ -12,3 +12,7 @@ with later, with which they can save their preferences, for easy meal generation
 3. Fill out preferences.
 4. Click "Generate Meal" or "I'm Feeling Lucky" buttons
 5. Enjoy! (Also, there is a link to the directions on how to prepare your meal)
+
+### Visual Demo
+https://github.com/samaslanowicz/NutriNinja/assets/144297745/941982f8-298f-475c-bf18-1a83c8349cfe
+
